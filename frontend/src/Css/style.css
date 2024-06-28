@@ -1,0 +1,218 @@
+body{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;   
+    background-image: url('../img/bg.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.multi-step{
+    width: 100%;
+}
+
+.font-w200{
+    font-weight: 200 !important;
+}
+
+.font-w300{
+    font-weight: 300 !important;
+}
+
+.font-w400{
+    font-weight: 400 !important;
+}
+
+.font-w500{
+    font-weight: 500 !important;
+}
+
+.font-w550{
+    font-weight: 550 !important;
+}
+
+.font-w600{
+    font-weight: 600 !important;
+}
+
+.font-w700{
+    font-weight: 700 !important;
+}
+
+.t-xxsm{
+    font-size: 11px !important;
+}
+
+.t-xsm{
+    font-size: 12px !important;
+}
+
+.t-sm{
+    font-size: 13px !important;
+}
+
+.t-md{
+    font-size: 15px !important;
+}
+
+.t-lg{
+    font-size: 18px !important;
+}
+
+.t-xlg{
+    font-size: 21px !important;
+}
+
+.t-xxlg{
+    font-size: 28px !important;
+}
+
+.t-gray{
+    color: gray;
+}
+
+.flex-calumn{
+flex-direction: column !important;
+}
+
+.b-radius-10{
+    border-radius: 10px;
+}
+
+
+.tab {
+    display: none;
+}
+.step {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border:2px solid rgb(214, 214, 214) ;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+.step p{
+position: absolute;
+top: 50%;
+font-size: 15px;
+left: 50%;
+color: white;
+transform: translate(-50%, -50%);
+}
+
+.step.active {
+    opacity: 1;
+}
+.step.finish {
+    border:2px solid orange;
+}
+
+
+.step-container{
+    text-align: center;
+}
+
+.tab input, .tab select, .tab textarea{
+    outline: none;
+    width: 100%;
+    border:none;
+    padding: 0px 10px;
+    border-bottom:1px solid black;
+
+}
+
+.invalid {
+    border-bottom:1px solid rgb(255, 72, 0) !important;   
+}
+
+.navigator button, .popupbtn{
+    background: #FF9800;
+    border: none;
+    color: white;
+    font-size: 19px;
+}
+
+.logo img{
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+}
+
+.file-label{
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.384);
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.popup .icon{
+    font-size: 120px;
+    color: #FF9800;
+}
+
+.showpopup{
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+opacity: 1;
+}
+
+.float-fields-reg {
+    position: relative;
+    width: 90%;
+}
+
+.main-label-reg {
+    position: absolute;
+    font-size: 14px;
+    left: 5px;
+    bottom: -5px;
+    width: max-content;
+    transform: translateY(-50%);
+    transition: 0.2s all ease-in-out;
+    z-index: -1;
+}
+
+
+.transform-label{
+    bottom: 20px;
+    left: 0px;
+    font-size: 10px;
+}
+
+.float-fields-reg input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    background-color:transparent;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+}
+.pageheader{
+    background: #FF9800;
+    border: none;
+    color: white;
+    font-size: 19px;
+}
